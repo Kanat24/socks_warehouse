@@ -20,6 +20,7 @@ public class Socks {
         } else {
             this.cottonPart = cottonPart;
         }
+
         if (quantity <= 0) {
             throw new RuntimeException("Количество носков не может быть отрицательным");
         } else {
