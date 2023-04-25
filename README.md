@@ -14,8 +14,13 @@
 
 ### Стек технологий:
 -Язык программирования Java
+
 -База данных PostgreSQL
+
 -Spring Framework,
+
 -Spring Boot,
+
 -Hibernate,
+
 -Liquibase
