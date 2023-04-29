@@ -18,6 +18,13 @@ public class SocksService {
         this.socksRepository = socksRepository;
     }
 
+    /**
+     * Search for socks in the warehouse that match the specified parameters
+     * @param   color               Socks color
+     * @param   operation           Operation for the value of the amount of cotton in the composition of socks
+     * @param   cottonPart          The percentage of cotton in the composition of socks
+     * @return  The total number of socks in stock that meet the specified parameters
+     */
     public String getAllSocks(String color, String operation, Integer cottonPart) {
         logger.info("Return the total number of socks in stock");
         List<Socks> socksFromRep1 = socksRepository.findAllByColorAndCottonPartGreaterThan(color, cottonPart);
@@ -54,7 +61,11 @@ public class SocksService {
         return "";
     }
 
-
+    /**
+     * Registration of receipt of socks to the warehouse
+     * @param   socks    Socks containing data on color, cotton content and number of pairs of socks
+     * @return  Registration of socks in the warehouse
+     */
     public Socks addSocks(Socks socks) {
         logger.info("Register the arrival of socks to the warehouse");
         Socks sockFromRep = socksRepository.findSocksByColorAndCottonPart(socks.getColor(), socks.getCottonPart());
@@ -68,6 +79,11 @@ public class SocksService {
 
     }
 
+    /**
+     * Registration of the issuance of socks from the warehouse
+     * @param   socks    Socks containing data on color, cotton content and number of pairs of socks
+     * @return  Registration of the issuance of socks from the warehouse
+     */
     public void deleteSocks(Socks socks) {
         logger.info("Registers the release of socks from the warehouse");
         Socks sockFromRep = socksRepository.findSocksByColorAndCottonPart(socks.getColor(), socks.getCottonPart());
