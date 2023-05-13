@@ -1,4 +1,6 @@
 # Автоматизация учета склада носков
+![sock warehouse](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8JqAvFfih4DK3yW_KfftJk_-sfKC8xPM1g&usqp=CAU)
+
 
 ## Разработчик:
 ## *_Sergey Rudnev_*
@@ -70,4 +72,3 @@ cottonPart — значение процентного содержания хл
 
 -Liquibase
 
-![sock warehouse](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS8JqAvFfih4DK3yW_KfftJk_-sfKC8xPM1g&usqp=CAU)
